@@ -2,6 +2,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
 }
 body{
 	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
@@ -9,17 +11,19 @@ body{
 	
 }
 .body-contacto{
-	background-image: url(imagenes/contactanos.png);
-	background-size: 100vw 100vh;
-	background-attachment: fixed;
-	margin: 0%;
+	background-image: url(Contacto.jpg);
+	opacity: .7;
+	background-size: cover;
+	background-position: center center;
+	height: calc(100vh - 80px);
+	box-sizing: border-box;
 }
 .productos{
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
 }
-
+	/*
 header{
     background-color:#c197d2;
     width: 100vw;
@@ -28,6 +32,7 @@ header{
     text-align: center;
     top: 10;
 }
+/*
 .logo-name, logo-name2{
 	width: 100px;
 	height: 100px;
@@ -37,7 +42,7 @@ header{
 }
 .logo img{ 
 	width: 100px;
-}
+}*/
 .search{
 	text-align: center;
 	padding: 10px;
@@ -53,6 +58,7 @@ header{
 	margin: auto;
 	width: 800px;
 	padding: 30px;
+	position: relative;
 }
   
   ul, li {
@@ -63,7 +69,7 @@ header{
   
   ul.slider{
 	position: relative;
-	width: 800px;
+	width: 600px;
 	height: 300px;
   }
   
@@ -187,7 +193,7 @@ h1 {
 	text-align: center;
 }
 h2 {
-	color:mediumpurple;
+	color:#fff;
 	text-align: center;
 	margin: 0;
 	font-size: 20px;
@@ -209,45 +215,68 @@ main{
 	background-color: #f1e9ff;
 }
 
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 nav{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-between;
-	align-items: stretch;
+    background-color:#e1b8f1;
+    height: 80px;
+    width: 100%;
 }
-nav ul {
-   list-style: none;
-   width: auto;
-   background: transparent;
-   padding-left:50px;
-   padding-right:50px;
-   height: 50px;
-   display: flex;
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
 }
-nav ul li {
-	display:grid;
-	grid-area:auto;
-	width: 120px;
-	vertical-align: top;
+.logo{
+    height: 60px;
 }
-
-nav ul li a {
-	display:flex;
-	color: black;
-	text-decoration: none;
-	background-color: transparent;
-	margin: 10px;
-	transition: background-color 1,5s;
+nav ul{
+    float: right;
+    margin-right: 20px;
 }
-
+nav ul li{
+    display: inline;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:beige;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background:#c685e0;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*
 nav ul li a:hover {
-    /* bordes */
+      
     border-left: solid 5px;
     background-color: transparent;
     color: white;
     cursor: pointer;
-}
-nav ul li ul li {
+} 
+/*nav ul li ul li {
 	display: block;
 }
 
@@ -265,10 +294,10 @@ nav ul li ul li a {
 	
 	text-decoration: none;
 	background-color: transparent;
-	
-}
+}*/
 article {
 	color: #c197d2; 
+	height: calc(100vh - 80px);
 }
 footer {
     background-color:#c197d2;
@@ -283,18 +312,18 @@ footer {
 }
 
 form{
-	width: 400px;
+	width: 100vh;
 	margin:auto;
-	background: rgba(15, 14, 14, 0.4);
+	background: black;
+	opacity: .5;
 	padding: 30px 20px;
 	box-sizing: border-box;
-	margin-top: 30px;
-	border-radius: 10px;
-	display:grid;
+	margin-top: 20px;
+	border-radius: 20px;
 }
 
 input, textarea{
-	width: 200px;
+	width: 400px;
 	margin-bottom: 20px;
 	padding: 10px;
 	box-sizing: border-box;
@@ -315,11 +344,52 @@ textarea{
 	cursor:pointer;
 }
 
-@media (max-width:480px) {
-	form{
-		width: 100px;
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+	.container-slider{
+		padding: 30px;
+		margin: 50px 0;
 	}
-	nav{
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#dbafec;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:#c685e0;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+	.container-slider, ul .slider{
+		margin: 50px 0;
 		width: 100px;
+		padding: 30px;
+		position: relative;
 	}
 }
