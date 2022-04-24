@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../estilos.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 	<title>Mi Cuenta</title>
@@ -10,27 +11,23 @@
 <body>
 	<header>
 		<nav>
-        	<input type="checkbox" id="check">
-        	<label for="check" class="checkbtn">
-				<i class='bx bx-menu'></i>
-        	</label>
-        	<a href="#" class="enlace">
-            	<img src="../imagenes/Hogar_Anmar.png" alt="" class="logo">
-        	</a>
-        <ul>
-            <li><a href="active" href="../index.html">Inicio</a></li>
-            <li><a href="./categoria.html">Productos</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./mi_cuenta.html">Mi Cuenta</a></li>
-			<li><a href="paginas/carrito.html">Carrito</a></li>
-        </ul>
-   		</nav>
-		
-		<div class="main-textos"></div>
-		<h2 class="tittle">De la Pagina a <span class="point">la puerta de tu casa.</span></h2>
-
-		</section>
+			<section id="header">
+				<img src="../imagenes/anmar.png" alt="" class="logo">
+			</a>
+		<div>
+			<ul id="navbar">
+			<li><a href="active" href="../index.html">Inicio</a></li>
+			<li><a href="categoria.html">Productos</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+			</ul>
+		</div>
+		<div id="mobile">
+			<a href="./paginas/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+			<i id="bar" class="fas fa-outdent"></i>
+		</div>
+	   </nav>
 	</header>
 <hr>
 	<section class="container-main">
@@ -39,17 +36,18 @@
 
 	</section>
 <hr>
-<form>
-	<div class="form">
-		<h2>Mi Cuenta</h2>
-		<input type="email" name="Correo Electronico" >Correo Electronico:
-		<input type="password" name="Contraseña"> Contraseña:
+	<div>
+	<h2>Mi Cuenta</h2>
+		<form>
+			<input type="email" name="Correo Electronico" >Correo Electronico:
+			<input type="password" name="Contraseña"> Contraseña:
+		</form>
 	</div>
-</form>
 <footer> <!-- Pie de pagina -->
  	<a href="https://Instagram">Instagram</a>
 	<a href="https://www.facebook.com/barbii.vazquez/">Facebook</a>
 	<p>Copyright Electro Anmar</p>
 </footer>
+	<script src="../bootstrap-local/js/bootstrap.js" ></script>
 </body>
 </html>
