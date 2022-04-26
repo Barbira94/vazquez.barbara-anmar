@@ -4,55 +4,102 @@
 	<!-- Link Bootstrap -->
 	<link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css">
 	<!-- Link Internos-->
-	<link rel="stylesheet" type="text/css" href="../estilos.css">
-	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
 	<title> Sobre Nosotros</title>
 	<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
 	<header>
-		<header>
-			<nav>
-				<section id="header">
-					<img src="../imagenes/anmar.png" alt="" class="logo">
-				</a>
-			<div>
-				<ul id="navbar">
-				<li><a href="active" href="../index.html">Inicio</a></li>
-				<li><a href="categoria.html">Productos</a></li>
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-				</ul>
-			</div>
-			<div id="mobile">
-				<a href="./paginas/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-				<i id="bar" class="fas fa-outdent"></i>
-			</div>
-		   </nav>
+		<nav>
+			<section id="header">
+				<img src="../imagenes/anmar.png" alt="" class="logo">
+				<div>
+					<ul id="navbar">
+					<li><a href="active" href="../index.html">Inicio</a></li>
+					<li><a href="categoria.html">Productos</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li id="lg-carrito"><a href="paginas/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+					<a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+					</ul>
+				</div>
+				<div id="mobile">
+					<a href="./paginas/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+					<i id="bar" class="fas fa-outdent"></i>
+				</div>
+			</section>
+		</nav>
 	</header>
-<hr>
 <main>
-	<div class="sobre-nosotros">
-		<h2> ANMAR inicia a fines del año 2019  Esto no sólo nos permite ofrecer una inigualable calidad de productos, sino mantener siempre los precios más bajos del mercado, debido al gran volúmen de compras al por mayor.
-			
-			Ofreciendo productos destacados, cuidadosamente seleccionados y enviándolos al domicilio de cada persona que compra en nuestra plataforma de ventas Online.
-			
-			MISIÓN Y VALORES
-			
-			-Contribuir a mejorar la calidad de vida de nuestros clientes, ofreciendo productos de primera calidad.
-			
-			-Satisfacer y superar las expectativas de nuestros clientes, a través de una experiencia de compra que combine de manera óptima, productos, servicios y conveniencia, logrando así su reiterada preferencia. Nuestra visión es a largo plazo, ya que la relación con nuestros clientes no termina con la venta de un producto, justamente en ese momento es cuando comienza.</h2>
-	</div>
+	<section>
+	<img src="../imagenes/anmar.png" class="img-thumbnail" alt="...">
+	<ul id="grid" class="nosotros">
+		<h4>¿Cómo surgió Anmar?</h4>
+		<li><p class="lh-1">A fines del 2019 débido a la pandemia, junto a mi hermana empezamos la venta de electrodomesticos online, a través de Whatsapp y Facebook.<br>Desde entonces, empezamos a dedicarnos más de lleno, vendiendo mayorista a medianas empresas.<br>También empezamos a incluir más vendedores en diferentes zonas.</p></li>
+		<h4>¿De dónde somos?</h4>
+		<li><p class="lh-sm">Somos de Buenos Aires, Zona Oeste. Merlo exactamente.</p> </li>
+		<h4>Preguntas frencuentes</h4>
+		<li><p class="lh-base">¿Cuanto demoran los envios?</p></li>
+		<li><p class="lh-base">¿Que radio tiene envio gratis?</p></li>
+		<li><p class="lh-base">¿Los Productos son usados?</p></li>
+		<li><p class="lh-base">¿Los productos tienen garantia?</p></li>
+		<li><p class="lh-base">¿Qué pasa si me arrepiento de mi compra?</p></li>
+	</ul>
+	</section>
+	<section id="newsletter" class="section-p1 "> 
+		<div class="newstext">
+			<h4>Obtene el cátalogo semanal</h4>
+			<p>Suscribite para recibir nuestras novedades y <span>Ofertas Especiales</span></p>
+		</div>
+		<div class="form">
+		  <input type="text" placeholder="Tu correo electronico" name="" id="">
+		  <button class="normal">Suscribirme</button>
+		</div>
+	</section>
 </main>
-<hr>
-<footer> <!-- Pie de pagina -->
-    <a href="https://Instagram">Instagram</a>
-	<a href="https://www.facebook.com/barbii.vazquez/">Facebook</a>
-	<p>Copyright Electro Anmar - 2022 - Desarrollado por Vázquez</p>
+<footer class="section-p1">  <!-- Pie de pagina -->
+	<div class="col">
+		<img src="../imagenes/anmar.png" alt="" class="logo-foot">
+		<h4>Contactanos</h4>
+		<p><strong>Teléfono</strong>+54 9 11 6996 5667</p>
+		<p><strong>Correo</strong> blablabla@....com</p>
+	  <div class="follow">
+		  <h4>Seguinos</h4>
+		  <div class="icon">
+			  <i class="fa-brands fa-facebook-square"></i>
+			  <i class="fa-brands fa-instagram-square"></i>
+		  </div>
+	  </div>
+	</div>
+	<div class="col">
+		<h4>Acerca de</h4>
+		<a href="#">Sobre Nosotros</a>
+		<a href="#">Información sobre envíos</a>
+		<a href="#">Politica de Privacidad</a>
+		<a href="#">Terminos y Condiciones</a>
+		<a href="#">Contactacnos</a>
+	</div>
+	<div class="col">
+	  <h4>Mi Cuenta</h4>
+	  <a href="#">Ingresar</a>
+	  <a href="#">Ver carrito</a>
+	  <a href="#">Mi Lista de Deseo</a>
+	  <a href="#">Seguimiento de Envío</a>
+	  <a href="#">Ayuda</a>
+  <div class="row">
+  <p>Medios de pago</p>
+  <img src="../imagenes/tarjetas.jpg" alt="" class="tarjetas" >
+  </div>
+	</div>
+	<div class="copyright">
+		<p>&COPY; Electro Anmar - 2022 Desarrollado por Bárbara Vazquez </p>
+	</div>       
+<!-- enlace interno -->
+<a href="#Arriba">Ir Arriba</a>
 </footer>
- 	<!--Link Javascript-->
-	<script src="../bootstrap-local/js/bootstrap.js" ></script>
+<script src="script.js" ></script>
+<script src="bootstrap-local/js/bootstrap.js"></script>
 </body>
 </html>

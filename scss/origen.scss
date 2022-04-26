@@ -1,3 +1,4 @@
+/* prueba */
 *{
     margin: 0%;
     padding: 0%;
@@ -6,9 +7,22 @@
 }
 
 h1 {
-    font-size: 50px;
-    line-height: 64px;
-    color: black;
+    font-size: 30px;
+    line-height: 40px;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 h2{
@@ -73,7 +87,15 @@ body{
 .logo{
     height: 60px;
 }
-
+.img-thumbnail {
+    height: 150px;
+    margin: 25px;
+}
+.nosotros {
+    margin: 20px;
+    font-size: small;
+    background-color: #dcb3e8;
+}
 /* HEADER */
 #header{
 	display: flex;
@@ -150,7 +172,7 @@ body{
 }
 
 #hero button{
-    background-image: url(./imagenes/mancha.png);
+    background-image: url(../imagenes/mancha.png);
     background-color: transparent;
 	background-size: cover;
     color: rgb(105, 0, 96);
@@ -209,15 +231,13 @@ body{
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(146, 40, 162, 0.423);
-    margin: 15px 0;
+    border-radius: 30px;
+     margin: 15px 20px;
     transition: 0.25s ease;
     position: relative;
 }
 #product1 .pro:hover{
-    box-shadow: 20px 20px 30px rgba(207, 126, 200, 0.368);
+    box-shadow: 20px 20px 30px rgba(209, 123, 233, 0.368);
 }
 
 #product1 .pro img{
@@ -269,7 +289,7 @@ body{
 }
 
 #banner{
-	background-image: url(imagenes/banner.png);
+	background-image: url(../imagenes/banner.png);
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -312,7 +332,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image:url(imagenes/computacion.png) ;
+    background-image:url(../imagenes/computacion.png) ;
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -325,7 +345,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image:url(imagenes/calefacion.png) ;
+    background-image:url(../imagenes/calefacion.png) ;
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -364,7 +384,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image:url(imagenes/newsletter.png);
+    background-image:url(../imagenes/newsletter.png);
     background-repeat: no-repeat;
     background-position: 5% 10%;
     background-color: rgb(159, 105, 85);
@@ -408,6 +428,10 @@ body{
     white-space: nowrap;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
+}
+#grid{ 
+    background-image: linear-gradient(to top, #dcb3e8 , white);
+
 }
 
 footer {
@@ -491,6 +515,7 @@ form {
 
 
 
+
 /* Media Query */
 @media (max-width:799px) {
     #navbar {
@@ -510,7 +535,109 @@ form {
     }
 
     #navbar.active{
-        right: 10px;
+        right: 0px;
+    }
+    #nabvar i{
+        margin-bottom: 25px;
+    }
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i {
+        color:aliceblue;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        position: absolute;
+        display: initial;
+        top: 30px;
+        left: 30px;
+        color:#000000;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    #lg-carrito{
+        display: none;
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 20px;
+        background-position: top 30% right 30%;
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 30px;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        margin: 15px;
+    }
+    #banner {
+        height: 30vh;
+    }
+    #sm-banner .banner-box, .banner-box2 {
+        min-width: 100%;
+        height: 50vh;
+        margin: 30px;
+    }
+    #newletter .form {
+        width: 70%;
     }
 }
 
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2 {
+        margin-top: 30px;
+    }
+    #newsletter {
+        padding: 40px 20px;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
+    #footer .copyright {
+        text-align: start;
+    }
+
+
+
+}
