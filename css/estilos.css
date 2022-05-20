@@ -99,7 +99,6 @@ body {
   background-color: #dcb3e8;
 }
 
-/* HEADER */
 #header {
   display: flex;
   align-items: center;
@@ -118,13 +117,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 #navbar li {
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
-
 #navbar li a {
   text-decoration: none;
   font-size: 16px;
@@ -168,12 +165,10 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
-
 #hero h4 {
   padding-bottom: 15px;
 }
-
-#hero h1 {
+#hero h4 h1 {
   color: rgb(238, 233, 246);
 }
 
@@ -214,7 +209,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 #feature .fe-box h6 {
   display: inline-block;
   padding: 9px 8px 6px 8px;
@@ -227,15 +221,13 @@ body {
 #product1 {
   text-align: center;
 }
-
 #product1 .pro-container {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
   flex-wrap: wrap;
 }
-
-#product1 .pro {
+#product1 .pro-container .pro {
   width: 23px;
   min-width: 250px;
   padding: 10px 12px;
@@ -245,13 +237,12 @@ body {
   transition: 0.25s ease;
   position: relative;
 }
-
-#product1 .pro:hover {
+#product1 .pro-container .pro:hover {
   box-shadow: 20px 20px 30px rgba(209, 123, 233, 0.368);
 }
 
 #product1 .pro img {
-  width: 100px;
+  width: 200px;
   border-radius: 20px;
 }
 
@@ -261,14 +252,16 @@ body {
 }
 
 #product1 .pro .des span {
-  color: burlywood;
+  color: rgb(89, 14, 108);
   font-size: 12px;
+  font-weight: 700;
 }
 
 #product1 .pro .des h5 {
   padding-top: 7px;
   color: black;
   font-size: 14px;
+  font-weight: 600;
 }
 
 #product1 .pro .des i {
@@ -286,15 +279,15 @@ body {
 #product1 .pro .fa-cart-shopping {
   width: 40px;
   height: 40px;
-  line-height: 40px;
-  border-radius: 50px;
+  line-height: 50px;
+  border-radius: 20px;
   background-color: rgba(174, 70, 129, 0.5568627451);
-  font-weight: 500;
+  font-weight: 100;
   color: rgb(0, 0, 0);
   border: 1px solid #eb68db;
   position: absolute;
-  bottom: 20px;
-  right: 10px;
+  bottom: 10px;
+  right: 30px;
 }
 
 #banner {
@@ -310,21 +303,8 @@ body {
   background-position: center;
 }
 
-#banner h4 {
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  text-transform: uppercase;
-  text-shadow: #000000;
-}
-
-#banner h2 {
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  padding: 10px 0;
-}
-
 #banner h2 span {
-  color: #ef3636;
+  color: #a419bd;
 }
 
 #banner button:hover {
@@ -337,13 +317,24 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+#sm-banner h2 {
+  color: rgb(130, 46, 170);
+  font-size: 20px;
+  font-weight: 800;
+}
+#sm-banner h4 {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+}
 
 #sm-banner .banner-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(../imagenes/computacion.png);
+  background-image: url(../imagenes/bann-comput.png);
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -356,7 +347,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(../imagenes/calefacion.png);
+  background-image: url(../imagenes//bann-calef.png);
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -364,29 +355,16 @@ body {
   padding: 30px;
 }
 
-#sm-banner h4 {
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-#sm-banner h2 {
-  color: rgb(205, 116, 116);
-  font-size: 20px;
-  font-weight: 800;
-}
-
 #sm-banner span {
   color: rgba(143, 22, 107, 0.809);
   font-size: 14px;
   font-weight: 500;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 #sm-banner .banner-box:hover button {
-  background-color: bisque;
-  border: 1px solid #ef3636;
+  background-color: rgb(235, 196, 255);
+  border: 1px solid #c75df0;
 }
 
 #newsletter {
@@ -394,22 +372,19 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url(../imagenes/newsletter.png);
-  background-repeat: no-repeat;
+  background-image: url(../imagenes/Newsletter\ Email\ .png);
+  background-repeat: repeat;
   background-position: 5% 10%;
-  background-color: rgb(159, 105, 85);
 }
-
 #newsletter h4 {
   font-size: 22px;
   font-weight: 700;
-  color: bisque;
+  color: rgb(116, 0, 139);
 }
-
-#newsletter p {
+#newsletter h4 p {
   font-size: 14px;
   font-weight: 600;
-  color: #818ea0;
+  color: #ac4cb1;
 }
 
 #newsletter p span {
@@ -418,7 +393,7 @@ body {
 
 #nesletter .form {
   display: flex;
-  width: 40%;
+  width: 50%;
 }
 
 #newsletter input {
@@ -427,18 +402,18 @@ body {
   font-size: 14px;
   width: 100%;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0px;
   outline: none;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 #newsletter button {
-  background-color: cadetblue;
-  color: beige;
+  background-color: rgb(218, 185, 239);
+  color: rgb(153, 46, 183);
   white-space: nowrap;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 #grid {
@@ -450,27 +425,21 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-footer col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-footer .logo-foot {
-  margin-bottom: 30px;
-  width: 50px;
-  height: 50px;
+footer .logof {
+  margin: 10px 50px 0px 0px;
+  padding: 10px;
 }
 
 footer h4 {
-  font-size: 14px;
-  padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-bottom: 10px;
 }
 
 footer p {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0 0 8px 0;
 }
 
@@ -481,8 +450,14 @@ footer a {
   margin-bottom: 10px;
 }
 
+footer .logo-foot {
+  margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+}
+
 footer .follow i {
-  color: #000000;
+  color: #d381e7;
   padding-right: 4px;
   cursor: pointer;
 }
@@ -495,7 +470,7 @@ footer .tarjetas {
 footer .follow,
 footer a:hover {
   margin-top: 20px;
-  color: rgb(189, 111, 9);
+  color: rgb(138, 9, 194);
   cursor: pointer;
 }
 
@@ -508,9 +483,89 @@ footer .copyright {
   text-align: center;
 }
 
+/* Productos */
+#page-hero {
+  background-image: url(../imagenes/shopping\ header.png);
+  width: 100%;
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#pagina {
+  text-align: center;
+}
+#pagina a {
+  text-decoration: none;
+  background-color: #ac4cb1;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+}
+#pagina a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*single product*/
+#prodetalles {
+  display: flex;
+  margin-top: 30px;
+}
+#prodetalles .single-pro-image {
+  width: 40%;
+  margin-right: 130px;
+}
+
+.single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+.single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+.single-pro-details h4 h2 {
+  font-size: 26px;
+}
+
+.single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.single-pro-details input :focus {
+  outline: none;
+}
+
+.single-pro-details button {
+  background: #d381e7;
+  color: #ffffff;
+}
+
+.single-pro-details span {
+  line-height: 30px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-group .small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
 form {
-  background-image: url(imagenes/contact-form.png);
-  padding: 10px 60px;
+  background-image: url(../imagenes/fondo-contacto.png);
+  padding: 50px 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -603,10 +658,10 @@ form {
     height: 30vh;
   }
 
-  #sm-banner .banner-box, .banner-box2 {
-    min-width: 100%;
-    height: 50vh;
-    margin: 30px;
+  #sm-banner {
+    width: 100%;
+    height: 10vh;
+    margin-top: 30px;
   }
 
   #newletter .form {
@@ -652,12 +707,11 @@ form {
     height: 40vh;
   }
 
-  #sm-banner .banner-box {
-    height: 40vh;
-  }
-
-  #sm-banner .banner-box2 {
-    margin-top: 30px;
+  #sm-banner {
+    width: 100%;
+    height: 110vh;
+    margin-top: 10px;
+    padding: 40px 20px;
   }
 
   #newsletter {
@@ -670,6 +724,21 @@ form {
 
   #footer .copyright {
     text-align: start;
+  }
+
+  /* Single Product */
+  #prodetalles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodetalles .single-pro-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #prodetalles .single-pro-details {
+    width: 100%;
   }
 }
 
