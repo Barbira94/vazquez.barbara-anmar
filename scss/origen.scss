@@ -101,7 +101,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 80px;
+	padding: 20px 60px;
 	background-color: #dcb3e8;
 	box-shadow: 0 5px 15px rgba(206, 24, 24, 0.06);
 	z-index: 999;
@@ -149,8 +149,8 @@ body{
 /* Home Page */
 
 #hero {
-    background-image: url(/imagenes/banerheader.jpg);
-    height: 80vh;
+    background-image: url(../imagenes/bannerheader.png);
+    height: 110vh;
     width: 100%;
 	background-color: transparent;
     background-size: cover;
@@ -411,64 +411,11 @@ body{
 
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-.logof{
-    margin:10px 50px 0px 0px;
-    padding: 10px;
-}
-}
-
-
-footer h4{
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: italic;
-    padding-bottom: 10px;
-}
-
-footer p{
-    font-size: 15px;
-    margin: 0 0 8px 0;
-}
-footer a{
-    font-size: 13px;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 10px;
-}
-footer .logo-foot{
-    margin-bottom: 30px;
-    width: 100px;
-    height:100px;
-}
-footer .follow i{
-	color: #d381e7;
-	padding-right: 4px;
-	cursor: pointer;
-}
-footer .tarjetas {
-	width: 50%;
-	height: 50%;
-}
-
-footer .follow,
-footer a:hover {
-    margin-top: 20px;
-    color: rgb(138, 9, 194);
-    cursor: pointer;
-}
-
-footer .follow i:hover{
-    color: #d86464;
-}
-
-footer .copyright {
-    width: 100%;
-    text-align: center;
+footer{
+	background-color: #dcb3e8;
+	z-index: 999;
+	position: sticky;
+    margin: 10px 0px 0px 0px;
 }
 
 /* Productos */
@@ -566,13 +513,16 @@ form {
 #close {
     display: none;
 }
+.form-signin{
+
+}
 
 
 
 
 
 /* Media Query */
-@media (max-width:799px) {
+@media (max-width:768px) {
     #navbar {
         display: flex;
         flex-direction: column;
@@ -645,6 +595,9 @@ form {
     #newletter .form {
         width: 70%;
     }
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
 }
 
 @media (max-width: 477px) {
