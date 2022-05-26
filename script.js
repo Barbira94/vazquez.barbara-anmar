@@ -17,3 +17,18 @@ if (close) {
 })
     
 }
+
+function login(event){
+    localStorage.setItem('cuenta', event.target.elements.cuenta.value);
+}
+
+function checkUser(){
+    let usuario = localStorage.getItem('cuenta');
+    if (usuario){
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('carrito').style.display = 'block';
+        console.log(usuario);
+    }
+}
+
+checkUser();
